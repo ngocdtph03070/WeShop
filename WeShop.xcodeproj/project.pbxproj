@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2AE33D2211AF9DC00E7C204 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AE33D1211AF9DC00E7C204 /* Config.swift */; };
 		E2BBBBB4211AC5C4009CACC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BBBBB3211AC5C4009CACC0 /* AppDelegate.swift */; };
 		E2BBBBB6211AC5C4009CACC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BBBBB5211AC5C4009CACC0 /* ViewController.swift */; };
 		E2BBBBB9211AC5C4009CACC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BBBBB7211AC5C4009CACC0 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		25F2AC7B69D812A4DB726151 /* Pods-WeShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeShop/Pods-WeShop.release.xcconfig"; sourceTree = "<group>"; };
 		CA440989A9210B7E746E2F40 /* Pods_WeShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF15518FACBA64E049A5ED08 /* Pods-WeShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeShop/Pods-WeShop.debug.xcconfig"; sourceTree = "<group>"; };
+		E2AE33D1211AF9DC00E7C204 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Config.swift; path = WeShop/Config.swift; sourceTree = SOURCE_ROOT; };
 		E2BBBBB0211AC5C4009CACC0 /* WeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BBBBB3211AC5C4009CACC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2BBBBB5211AC5C4009CACC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				E2BBBBCD211AC63B009CACC0 /* Service */,
-				E2BBBBCC211AC620009CACC0 /* Configuration */,
+				E2BBBBCC211AC620009CACC0 /* Config */,
 				E2BBBBCB211AC619009CACC0 /* Resources */,
 				E2BBBBCA211AC603009CACC0 /* Vendor */,
 				E2BBBBC9211AC5FD009CACC0 /* Controllers */,
@@ -146,11 +148,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		E2BBBBCC211AC620009CACC0 /* Configuration */ = {
+		E2BBBBCC211AC620009CACC0 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				E2AE33D1211AF9DC00E7C204 /* Config.swift */,
 			);
-			path = Configuration;
+			path = Config;
 			sourceTree = "<group>";
 		};
 		E2BBBBCD211AC63B009CACC0 /* Service */ = {
@@ -278,6 +281,7 @@
 			files = (
 				E2BBBBB6211AC5C4009CACC0 /* ViewController.swift in Sources */,
 				E2BBBBB4211AC5C4009CACC0 /* AppDelegate.swift in Sources */,
+				E2AE33D2211AF9DC00E7C204 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WeShop/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WeShop/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,7 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WeShop/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WeShop/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
