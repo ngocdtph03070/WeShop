@@ -9,17 +9,13 @@
 import Foundation
 
 // Cấu hình các dữ liệu
-
+import ws
 struct Config {
 
     struct Google {
         static var APIKey = "Key"
     }
-    
-    struct Service {
-        static var baseURL = ""
-    }
-    
+        
     struct Color {
         static var primaryColor = ""
     }

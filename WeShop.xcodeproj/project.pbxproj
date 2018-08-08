@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2182106211B514100EF1DB9 /* UserViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2182105211B514100EF1DB9 /* UserViewReactor.swift */; };
+		E260D15F211B126D000AA37D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260D15E211B126D000AA37D /* UserModel.swift */; };
+		E2ACCE72211AFE59001251F2 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ACCE71211AFE59001251F2 /* APIClient.swift */; };
 		E2AE33D2211AF9DC00E7C204 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AE33D1211AF9DC00E7C204 /* Config.swift */; };
+		E2AE33D5211AFD4500E7C204 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AE33D4211AFD4500E7C204 /* Router.swift */; };
 		E2BBBBB4211AC5C4009CACC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BBBBB3211AC5C4009CACC0 /* AppDelegate.swift */; };
 		E2BBBBB6211AC5C4009CACC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BBBBB5211AC5C4009CACC0 /* ViewController.swift */; };
 		E2BBBBB9211AC5C4009CACC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BBBBB7211AC5C4009CACC0 /* Main.storyboard */; };
@@ -20,7 +24,11 @@
 		25F2AC7B69D812A4DB726151 /* Pods-WeShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeShop/Pods-WeShop.release.xcconfig"; sourceTree = "<group>"; };
 		CA440989A9210B7E746E2F40 /* Pods_WeShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF15518FACBA64E049A5ED08 /* Pods-WeShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeShop/Pods-WeShop.debug.xcconfig"; sourceTree = "<group>"; };
-		E2AE33D1211AF9DC00E7C204 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Config.swift; path = WeShop/Config.swift; sourceTree = SOURCE_ROOT; };
+		E2182105211B514100EF1DB9 /* UserViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewReactor.swift; sourceTree = "<group>"; };
+		E260D15E211B126D000AA37D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		E2ACCE71211AFE59001251F2 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		E2AE33D1211AF9DC00E7C204 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Config.swift; path = WeShop/Config/Config.swift; sourceTree = SOURCE_ROOT; };
+		E2AE33D4211AFD4500E7C204 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		E2BBBBB0211AC5C4009CACC0 /* WeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BBBBB3211AC5C4009CACC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2BBBBB5211AC5C4009CACC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +67,39 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E260D15C211B1215000AA37D /* Reactor */ = {
+			isa = PBXGroup;
+			children = (
+				E2182105211B514100EF1DB9 /* UserViewReactor.swift */,
+			);
+			path = Reactor;
+			sourceTree = "<group>";
+		};
+		E260D15D211B123C000AA37D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2BBBBB5211AC5C4009CACC0 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E2ACCE73211B0992001251F2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E2AE33D4211AFD4500E7C204 /* Router.swift */,
+				E2ACCE71211AFE59001251F2 /* APIClient.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E2AE33D3211AFB9B00E7C204 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E2AE33D1211AF9DC00E7C204 /* Config.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		E2BBBBA7211AC5C4009CACC0 = {
 			isa = PBXGroup;
 			children = (
@@ -80,13 +121,11 @@
 		E2BBBBB2211AC5C4009CACC0 /* WeShop */ = {
 			isa = PBXGroup;
 			children = (
+				E2AE33D3211AFB9B00E7C204 /* Config */,
 				E2BBBBCD211AC63B009CACC0 /* Service */,
-				E2BBBBCC211AC620009CACC0 /* Config */,
 				E2BBBBCB211AC619009CACC0 /* Resources */,
 				E2BBBBCA211AC603009CACC0 /* Vendor */,
-				E2BBBBC9211AC5FD009CACC0 /* Controllers */,
-				E2BBBBC8211AC5F1009CACC0 /* View */,
-				E2BBBBC7211AC5EC009CACC0 /* Model */,
+				E2BBBBC9211AC5FD009CACC0 /* Source */,
 				E2BBBBC6211AC5D5009CACC0 /* Storyboard */,
 				E2BBBBC5211AC5CF009CACC0 /* Application */,
 				E2BBBBBA211AC5C9009CACC0 /* Assets.xcassets */,
@@ -115,6 +154,7 @@
 		E2BBBBC7211AC5EC009CACC0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E260D15E211B126D000AA37D /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -126,12 +166,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		E2BBBBC9211AC5FD009CACC0 /* Controllers */ = {
+		E2BBBBC9211AC5FD009CACC0 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E2BBBBB5211AC5C4009CACC0 /* ViewController.swift */,
+				E260D15D211B123C000AA37D /* Controller */,
+				E2BBBBC8211AC5F1009CACC0 /* View */,
+				E2BBBBC7211AC5EC009CACC0 /* Model */,
+				E260D15C211B1215000AA37D /* Reactor */,
 			);
-			path = Controllers;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		E2BBBBCA211AC603009CACC0 /* Vendor */ = {
@@ -148,17 +191,10 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		E2BBBBCC211AC620009CACC0 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				E2AE33D1211AF9DC00E7C204 /* Config.swift */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
 		E2BBBBCD211AC63B009CACC0 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				E2ACCE73211B0992001251F2 /* Base */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -257,15 +293,23 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WeShop/Pods-WeShop-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Arrow/Arrow.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactorKit/ReactorKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/thenPromise/then.framework",
+				"${BUILT_PRODUCTS_DIR}/ws/ws.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Arrow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactorKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/then.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ws.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -279,9 +323,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2AE33D5211AFD4500E7C204 /* Router.swift in Sources */,
 				E2BBBBB6211AC5C4009CACC0 /* ViewController.swift in Sources */,
 				E2BBBBB4211AC5C4009CACC0 /* AppDelegate.swift in Sources */,
+				E2182106211B514100EF1DB9 /* UserViewReactor.swift in Sources */,
 				E2AE33D2211AF9DC00E7C204 /* Config.swift in Sources */,
+				E260D15F211B126D000AA37D /* UserModel.swift in Sources */,
+				E2ACCE72211AFE59001251F2 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

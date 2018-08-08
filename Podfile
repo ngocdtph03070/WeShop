@@ -4,6 +4,7 @@
 target 'WeShop' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
+    pod 'ws', :git => 'https://github.com/freshOS/ws'
     pod 'RxCocoa'
 	pod 'ReactorKit'
   # Pods for Explore
