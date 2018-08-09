@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		E2182106211B514100EF1DB9 /* UserViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2182105211B514100EF1DB9 /* UserViewReactor.swift */; };
 		E260D15F211B126D000AA37D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260D15E211B126D000AA37D /* UserModel.swift */; };
+		E29C0B2F211BD6F500B8F282 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C0B2E211BD6F500B8F282 /* UserRouter.swift */; };
+		E29C0B5B211BF4EB00B8F282 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C0B34211BF4EB00B8F282 /* Extension.swift */; };
+		E29C0B78211BF4EB00B8F282 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C0B59211BF4EB00B8F282 /* Reachability.swift */; };
+		E29C0B79211BF4EB00B8F282 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C0B5A211BF4EB00B8F282 /* UIViewExtension.swift */; };
 		E2ACCE72211AFE59001251F2 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ACCE71211AFE59001251F2 /* APIClient.swift */; };
 		E2AE33D2211AF9DC00E7C204 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AE33D1211AF9DC00E7C204 /* Config.swift */; };
-		E2AE33D5211AFD4500E7C204 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AE33D4211AFD4500E7C204 /* Router.swift */; };
+		E2AE33D5211AFD4500E7C204 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AE33D4211AFD4500E7C204 /* BaseRouter.swift */; };
 		E2BBBBB4211AC5C4009CACC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BBBBB3211AC5C4009CACC0 /* AppDelegate.swift */; };
 		E2BBBBB6211AC5C4009CACC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BBBBB5211AC5C4009CACC0 /* ViewController.swift */; };
 		E2BBBBB9211AC5C4009CACC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BBBBB7211AC5C4009CACC0 /* Main.storyboard */; };
@@ -26,9 +30,13 @@
 		CF15518FACBA64E049A5ED08 /* Pods-WeShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeShop/Pods-WeShop.debug.xcconfig"; sourceTree = "<group>"; };
 		E2182105211B514100EF1DB9 /* UserViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewReactor.swift; sourceTree = "<group>"; };
 		E260D15E211B126D000AA37D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		E29C0B2E211BD6F500B8F282 /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
+		E29C0B34211BF4EB00B8F282 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		E29C0B59211BF4EB00B8F282 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		E29C0B5A211BF4EB00B8F282 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		E2ACCE71211AFE59001251F2 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		E2AE33D1211AF9DC00E7C204 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Config.swift; path = WeShop/Config/Config.swift; sourceTree = SOURCE_ROOT; };
-		E2AE33D4211AFD4500E7C204 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E2AE33D4211AFD4500E7C204 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		E2BBBBB0211AC5C4009CACC0 /* WeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BBBBB3211AC5C4009CACC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2BBBBB5211AC5C4009CACC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,13 +91,32 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		E2ACCE73211B0992001251F2 /* Base */ = {
+		E29C0B30211BE8F500B8F282 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				E2AE33D4211AFD4500E7C204 /* Router.swift */,
-				E2ACCE71211AFE59001251F2 /* APIClient.swift */,
+				E2AE33D4211AFD4500E7C204 /* BaseRouter.swift */,
+				E29C0B2E211BD6F500B8F282 /* UserRouter.swift */,
 			);
-			path = Base;
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E29C0B31211BF15700B8F282 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E29C0B33211BF4EB00B8F282 /* Utils */,
+				E2BBBBCD211AC63B009CACC0 /* Service */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		E29C0B33211BF4EB00B8F282 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E29C0B34211BF4EB00B8F282 /* Extension.swift */,
+				E29C0B59211BF4EB00B8F282 /* Reachability.swift */,
+				E29C0B5A211BF4EB00B8F282 /* UIViewExtension.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		E2AE33D3211AFB9B00E7C204 /* Config */ = {
@@ -122,10 +149,10 @@
 			isa = PBXGroup;
 			children = (
 				E2AE33D3211AFB9B00E7C204 /* Config */,
-				E2BBBBCD211AC63B009CACC0 /* Service */,
+				E29C0B31211BF15700B8F282 /* Manager */,
 				E2BBBBCB211AC619009CACC0 /* Resources */,
 				E2BBBBCA211AC603009CACC0 /* Vendor */,
-				E2BBBBC9211AC5FD009CACC0 /* Source */,
+				E2BBBBC9211AC5FD009CACC0 /* Sources */,
 				E2BBBBC6211AC5D5009CACC0 /* Storyboard */,
 				E2BBBBC5211AC5CF009CACC0 /* Application */,
 				E2BBBBBA211AC5C9009CACC0 /* Assets.xcassets */,
@@ -166,7 +193,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		E2BBBBC9211AC5FD009CACC0 /* Source */ = {
+		E2BBBBC9211AC5FD009CACC0 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				E260D15D211B123C000AA37D /* Controller */,
@@ -174,7 +201,7 @@
 				E2BBBBC7211AC5EC009CACC0 /* Model */,
 				E260D15C211B1215000AA37D /* Reactor */,
 			);
-			path = Source;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		E2BBBBCA211AC603009CACC0 /* Vendor */ = {
@@ -194,7 +221,8 @@
 		E2BBBBCD211AC63B009CACC0 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				E2ACCE73211B0992001251F2 /* Base */,
+				E29C0B30211BE8F500B8F282 /* Router */,
+				E2ACCE71211AFE59001251F2 /* APIClient.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -323,9 +351,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2AE33D5211AFD4500E7C204 /* Router.swift in Sources */,
+				E29C0B78211BF4EB00B8F282 /* Reachability.swift in Sources */,
+				E29C0B5B211BF4EB00B8F282 /* Extension.swift in Sources */,
+				E2AE33D5211AFD4500E7C204 /* BaseRouter.swift in Sources */,
+				E29C0B79211BF4EB00B8F282 /* UIViewExtension.swift in Sources */,
 				E2BBBBB6211AC5C4009CACC0 /* ViewController.swift in Sources */,
 				E2BBBBB4211AC5C4009CACC0 /* AppDelegate.swift in Sources */,
+				E29C0B2F211BD6F500B8F282 /* UserRouter.swift in Sources */,
 				E2182106211B514100EF1DB9 /* UserViewReactor.swift in Sources */,
 				E2AE33D2211AF9DC00E7C204 /* Config.swift in Sources */,
 				E260D15F211B126D000AA37D /* UserModel.swift in Sources */,

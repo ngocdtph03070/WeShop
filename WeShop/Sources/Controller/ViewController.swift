@@ -28,6 +28,7 @@ class ViewController: UIViewController,StoryboardView {
 //        // Dispose of any resources that can be recreated.
 //    }
 
+    
     func bind(reactor: UserViewReactor) {
         loginButton.rx.tap.map{ UserViewReactor.Action.getList}.bind(to: reactor.action).disposed(by: disposeBag)
         

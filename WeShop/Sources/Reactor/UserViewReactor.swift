@@ -20,7 +20,7 @@ class UserViewReactor:Reactor{
     }
     
     enum Mutation{
-        case statelogin(UserModel)
+        case login(UserModel)
         case todoList([UserModel])
     }
     
@@ -40,16 +40,16 @@ class UserViewReactor:Reactor{
     func mutate(action: UserViewReactor.Action) -> Observable<UserViewReactor.Mutation> {
         switch action {
         case .login(_):
-            return UserModel().getTodoWith(id: "1").map{Mutation.statelogin($0)}
+            return UserModel.getTodoWith(id: "1").map{Mutation.login($0)}
         case .getList:
-            return UserModel().getList().map{Mutation.todoList($0)}
+            return UserModel.getList().map{Mutation.todoList($0)}
         }
     }
     
     func reduce(state: UserViewReactor.State, mutation: UserViewReactor.Mutation) -> UserViewReactor.State {
         var state = state
         switch mutation {
-        case .statelogin(let user):
+        case .login(let user):
             state.userModel = user
             break
 

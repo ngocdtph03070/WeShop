@@ -7,20 +7,26 @@
 //
 
 import Foundation
-
+import UIKit
 // Cấu hình các dữ liệu
 import ws
 struct Config {
 
     struct Google {
         static var APIKey = "Key"
+        
     }
         
     struct Color {
-        static var primaryColor = ""
+        static var backgroundColor = UIColor(hexString: "#0058B6")
+        static var navigationColor = UIColor(hexString: "#0058B6")
+        static var greenButtonColor = UIColor(hexString: "#34CE76")
     }
     
     struct Font {
-        static var fontName = ""
+        static var fontMain = ""
     }
 }
+
+
+

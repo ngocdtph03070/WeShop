@@ -25,15 +25,17 @@ struct UserModel:ArrowParsable {
 
 extension UserModel{
     
-    func loginUserWith(params:[String:Any])->Observable<UserModel>{
-        return client.requestWith(Router.login(params: params))
+    static func loginUserWith(params:[String:Any])->Observable<UserModel>{
+        return client.requestWith(UserRouter(.login(params: params)))
     }
     
-    func getTodoWith(id:String)->Observable<UserModel>{
-        return client.requestWith(Router.getTodo(id: id))
+    static func getTodoWith(id:String)->Observable<UserModel>{
+        return client.requestWith(UserRouter(.getTodo(id: id)))
     }
     
-    func getList()->Observable<[UserModel]>{
-        return client.requestArrayWith(Router.getList())
+    static func getList()->Observable<[UserModel]>{
+        return client.requestArrayWith(UserRouter(.getList()))
     }
+    
+
 }
